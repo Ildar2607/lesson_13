@@ -1,4 +1,20 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: sans-serif;
 }
@@ -22,7 +38,7 @@ img {
 @media (max-width: 768px) {
   .container {
     max-width: 1171px;
-    width: 95%;
+    width: 90%;
   }
 }
 
@@ -50,13 +66,14 @@ img {
   text-align: right;
 }
 
-.navbar__address {
+.navbar__contacts {
   display: flex;
   flex-direction: column;
 }
 
 .navbar__button {
   margin-left: 30px;
+  outline: none;
 }
 
 .navbar__phone {
@@ -84,4 +101,94 @@ img {
 /*Стили для главного экрана*/
 .hero {
   padding: 50px 0;
+}
+
+.hero-block {
+  display: flex;
+}
+
+.hero-text {
+  flex-basis: 50%;
+  padding-right: 139px;
+}
+
+.hero-text__title {
+  font-size: 41px;
+  font-weight: 800;
+  line-height: 55px;
+  margin-bottom: 40px;
+  font-family: 'Museo Sans Light';
+}
+
+.hero-text__subtitle {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 70px;
+  font-family: 'Museo Sans Light';
+}
+
+.hero-list {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.hero-list__image {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ffd200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 30px;
+  max-width: auto;
+}
+
+.hero-list__text {
+  max-width: 300px;
+}
+
+@media (max-width: 1200px) {
+  .hero-block {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-list {
+    align-items: center;
+    margin-bottom: 44px;
+  }
+  .hero-list__text {
+    max-width: 210px;
+  }
+  .hero-text {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text__title {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 13px;
+    font-family: 'Museo Sans Light';
+  }
+  .hero-text__subtitle {
+    font-size: 16px;
+  }
+  .hero-list__item {
+    margin-bottom: 20px;
+  }
+  .hero-list__text {
+    font-size: 12px;
+  }
+  .hero-list__image {
+    margin-right: 15px;
+  }
 }
