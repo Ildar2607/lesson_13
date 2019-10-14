@@ -433,6 +433,11 @@ img {
 }
 
 /*Стили модального окна*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .modal {
   position: fixed;
   left: 0;
@@ -450,13 +455,68 @@ img {
 }
 
 .modal-dialog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 570px;
+  height: 674px;
   position: relative;
   margin: auto;
-  max-width: 450px;
-  width: 90%;
   min-width: 200px;
   background-color: #fff;
-  padding: 40px;
+}
+
+.modal-dialog__title {
+  font-size: 22px;
+  line-height: 33px;
+  margin-top: 80px;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 76px;
+  padding: none;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.modal-dialog__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+  margin-bottom: 50px;
+}
+
+.modal-dialog__input {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.modal-dialog__button {
+  margin-top: 30px;
+  width: 80%;
+  min-height: 70px;
+  margin-bottom: 33px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.modal-dialog__you {
+  display: block;
+  margin-bottom: 13px;
+}
+
+.modal-dialog__phone {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  color: #333333;
+  text-decoration: none;
+  font-size: 15px;
+  margin-bottom: 76px;
+  margin-top: 13px;
 }
 
 .modal-dialog__close {

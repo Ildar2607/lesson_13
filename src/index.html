@@ -104,12 +104,9 @@
                   <span class="offer__you">или перезвоните нам сами</span>
                   <a href="tel:+7(495)42-251-31" class="offer__phone">+7 (495) 42-251-31</a>
               </div>
-              <!-- /.offer__contacts -->
-
-                
+              <!-- /.offer__contacts -->  
             </div>
             <!--Конец offer__info-->
-            
           </form>
           <!-- /.form offer__form -->
         </div>
@@ -121,12 +118,33 @@
   </main>
   <div class="modal" id="modal">
     <div class="modal-dialog">
-      <button class="modal-dialog__close" id="">&times;</button>
-      <h4 class="modal-dialog__title">Всплывающее окно</h4>
+      <button class="modal-dialog__close" id="close">&times;</button>
+      <h4 class="modal-dialog__title">Узнайте точную стоимость<br>
+        ремонта по телефону!
+      </h4>
+      <span class="modal-dialog__subtitle">Заполните поля ниже - мы свяжемся с Вами
+      </span>
+      <form action="#" class="form modal-dialog__form">
+        <input type="text" class="input modal-dialog__input" placeholder="Ваше имя">
+        <input type="tell" class="input modal-dialog__input" placeholder="Ваш телефон">
+        <button class="button modal-dialog__button">Узнать стоимость</button>
+        <div class="modal-dialog__info">
+          <div class="modal-dialog__contacts">
+              <span class="modal-dialog__you">Или Вы можете перезвонить нам сами<br>
+                по телефону:
+                </span>
+              <a href="tel:+7(495)42-251-31" class="modal-dialog__phone">+7 (495) 42-251-31</a>
+          </div>
+          <!-- /.modal-dialog__contacts -->  
+        </div>
+        <!--Конец modal-dialog__info-->
+      </form>
+      <!-- /.form modal-dialog__form -->
     </div>
     <!-- /.modal-dialog -->
   </div>
   <!-- /.modal -->
+  
   <script src="js/main.js"></script>
 </body>
 </html>

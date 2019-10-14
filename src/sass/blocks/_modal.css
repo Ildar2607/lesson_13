@@ -13,6 +13,8 @@
 }
 
 .modal-dialog {
+  width: 570px;
+  height: 674px;
   position: relative;
   margin: auto;
   max-width: 450px;
@@ -20,6 +22,13 @@
   min-width: 200px;
   background-color: #fff;
   padding: 40px;
+}
+
+.modal-dialog__title {
+  color: #333333;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
 }
 
 .modal-dialog__close {
