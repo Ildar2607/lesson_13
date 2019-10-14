@@ -44,6 +44,24 @@
 .offer__button {
   width: 100%;
   min-height: 70px;
+  margin-bottom: 31px;
+}
+
+.offer__info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.offer__manager {
+  width: 224px;
+  line-height: 24px;
+}
+
+.offer__contacts {
+  display: flex;
+  flex-direction: column;
+  line-height: 24px;
 }
 
 @media (max-width: 1200px) {

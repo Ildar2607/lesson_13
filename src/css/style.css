@@ -61,7 +61,7 @@ img {
 }
 
 .section {
-  padding-top: 84px;
+  padding-top: 77px;
   padding-bottom: 92px;
 }
 
@@ -160,7 +160,8 @@ img {
 /*Стили для главного экрана*/
 .hero {
   background-color: #f5f5f5;
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 0;
 }
 
 .hero-block {
@@ -173,6 +174,7 @@ img {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-right: 0px;
+  padding-bottom: 94px;
 }
 
 .hero-text__title {
@@ -300,6 +302,11 @@ img {
 }
 
 /*Стили для блока offer*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .offer {
   background: url("../img/offer/offer-bg.png") no-repeat;
   background-position: center right;
@@ -326,7 +333,9 @@ img {
 .offer__title {
   max-width: 360px;
   line-height: 35px;
-  margin-bottom: 24px;
+  margin-top: 0;
+  margin-bottom: 21px;
+  padding: none;
 }
 
 .offer__subtitle {
@@ -335,8 +344,10 @@ img {
 }
 
 .offer__input {
+  font-size: 15px;
   margin-bottom: 30px;
   width: 240px;
+  height: 65px;
 }
 
 .offer__input:first-child {
@@ -346,6 +357,44 @@ img {
 .offer__button {
   width: 100%;
   min-height: 70px;
+  margin-bottom: 25px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.offer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 15px;
+}
+
+.offer__manager {
+  width: 230px;
+  line-height: 24px;
+}
+
+.offer__contacts {
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 24px;
+}
+
+.offer__phone {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  color: #333333;
+  text-decoration: none;
+  font-size: 15px;
 }
 
 @media (max-width: 1200px) {
@@ -359,6 +408,15 @@ img {
   .offer__button {
     font-size: 13px;
   }
+  .offer__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer__manager {
+    padding-bottom: 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -369,5 +427,41 @@ img {
     width: 100%;
     padding-right: 0;
   }
+  .offer__phone {
+    max-width: 100%;
+  }
+}
+
+/*Стили модального окна*/
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  position: relative;
+  margin: auto;
+  max-width: 450px;
+  width: 90%;
+  min-width: 200px;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.modal-dialog__close {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */
