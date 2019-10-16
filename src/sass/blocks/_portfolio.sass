@@ -2,7 +2,6 @@
   background: $secondary url('../img/portfolio/portfolio-pattern.jpg') repeat-y center left
   background-size: 50%
   &__title
-    max-width: 500px
     margin: auto
     margin-bottom: 99px
   &__arrows
@@ -14,4 +13,13 @@
 .slider
   &__image
     margin: auto
+@media (max-width: 1200px)
+  .slider
+    &__image
+      width: 85%
+@media (max-width: 768px)
+  .slider
+    &__image
+      min-width: 246px
+  
     
