@@ -1,13 +1,30 @@
+*
+  box-sizing: border-box
 .price
+  padding: 85px 0 84px
   &__title
-    margin: auto
-    margin-bottom: 58px
-  &__subtitle
-    margin-bottom: 59px
+    display: block
     text-align: center
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 50px
+    font-size: 30px
+    line-height: 45px
+    max-width: 515px
+    +bold
+  &__subtitle
+    display: block
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+    margin-bottom: 59px
+    font-size: 20px
+    font-weight: 300
   &__card
     margin-bottom: 30px
 .card
+  width: 370px
+  height: 410px
   text-align: center
   border: 1px solid $border-card
   transition: 0.2s
@@ -17,8 +34,18 @@
       opacity: 1
       transition: 0.2s
   &__text
-    padding: 40px
+    padding-top: 34px
+    padding-bottom: 40px
+  &__title
+    padding-top: 2px
+    padding-left: 4px
+    font-size: 18px
+    margin-bottom: 30px
+  &__subtitle
+    +bold
+    font-size: 16px
   &__image
+    display: block
     position: relative
     &::before
       content: ''
@@ -56,5 +83,13 @@
     display: flex
     justify-content: space-between
     flex-wrap: wrap
-img
-  display: block
+@media (max-width: 768px)
+  .price
+    &__title
+      margin-bottom: 25px
+      font-size: 18px
+      line-height: 22px
+      max-width: 260px
+    &__subtitle
+      font-size: 14px
+      margin-bottom: 61px

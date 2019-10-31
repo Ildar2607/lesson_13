@@ -1,0 +1,15 @@
+.brif-block {
+  display: flex;
+}
+
+.brif__interview {
+  flex-basis: 50%;
+}
+
+.brif__form {
+  flex-basis: 50%;
+}
+
+.interview__title {
+  font-size: 22px;
+}

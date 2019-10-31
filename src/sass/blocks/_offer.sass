@@ -5,6 +5,7 @@
   background-position: center right
   background-size: contain
   position: relative
+  padding: 75px 0 90px
   &::before
     content: ''
     width: 50%
@@ -18,15 +19,18 @@
     padding-right: 90px
     position: relative
   &__title
+    font-size: 24px
+    font-weight: 700px
     max-width: 360px
     line-height: 35px
-    margin-top: 0
     margin-bottom: 20px
-    padding: none
-    text-align: left
+    +bold
   &__subtitle
-    max-width: 250px
-    margin-bottom: 30px
+    display: block
+    font-weight: 300px
+    font-size: 16px
+    max-width: 270px
+    margin-bottom: 31px
   &__input
     font-size: 15px
     margin-bottom: 30px
@@ -40,7 +44,7 @@
   &__button
     width: 100%
     min-height: 70px
-    margin-bottom: 25px
+    margin-bottom: 26px
     +bold
   &__info
     display: flex
@@ -79,5 +83,6 @@
       padding-right: 0
     &__phone
       max-width: 100%
+      margin-bottom: 56px
     
   
